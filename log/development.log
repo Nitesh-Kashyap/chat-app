@@ -911,3 +911,206 @@ Started GET "/cable/" [WebSocket] for 2405:201:a41d:e019:10b9:e7b3:fba5:66fc at 
 Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
 ChatRoomChannel is transmitting the subscription confirmation
 ChatRoomChannel is streaming from chat_room_channel
+Started GET "/" for ::1 at 2023-05-24 16:28:11 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 207)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 8129)
+
+
+Started GET "/cable" for ::1 at 2023-05-24 16:28:12 +0530
+Started GET "/cable/" [WebSocket] for ::1 at 2023-05-24 16:28:12 +0530
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+ChatRoomChannel#announce({"name"=>"Nitesh", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Nitesh", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Nitesh", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"Hello Dost", "name"=>"Nitesh"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"Hello Dost", :sent_by=>"Nitesh"}
+ChatRoomChannel transmitting {"message"=>"Hello Dost", "sent_by"=>"Nitesh"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2023-05-24 16:28:33 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 4ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 3544)
+
+
+Started GET "/cable" for ::1 at 2023-05-24 16:28:33 +0530
+Started GET "/cable/" [WebSocket] for ::1 at 2023-05-24 16:28:33 +0530
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/service-worker.js" for ::1 at 2023-05-24 16:28:35 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+ChatRoomChannel#announce({"name"=>"Dost", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Dost", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Dost", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"chat_room_name"=>"Dost", "type"=>"join"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"Hello Bhai", "name"=>"Dost"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"Hello Bhai", :sent_by=>"Dost"}
+ChatRoomChannel transmitting {"message"=>"Hello Bhai", "sent_by"=>"Dost"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"Hello Bhai", "sent_by"=>"Dost"} (via streamed from chat_room_channel)
+ChatRoomChannel#speak({"message"=>"Whats up", "name"=>"Nitesh"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"Whats up", :sent_by=>"Nitesh"}
+ChatRoomChannel transmitting {"message"=>"Whats up", "sent_by"=>"Nitesh"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"Whats up", "sent_by"=>"Nitesh"} (via streamed from chat_room_channel)
+Started GET "/service-worker.js" for ::1 at 2023-05-24 16:29:04 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+ChatRoomChannel#speak({"message"=>"Kch Nahi", "name"=>"Dost"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"Kch Nahi", :sent_by=>"Dost"}
+ChatRoomChannel transmitting {"message"=>"Kch Nahi", "sent_by"=>"Dost"} (via streamed from chat_room_channel)
+ChatRoomChannel transmitting {"message"=>"Kch Nahi", "sent_by"=>"Dost"} (via streamed from chat_room_channel)
+Started GET "/" for ::1 at 2023-05-24 17:09:47 +0530
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 212)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 8245)
+
+
+Started GET "/cable" for ::1 at 2023-05-24 17:09:47 +0530
+Started GET "/cable/" [WebSocket] for ::1 at 2023-05-24 17:09:47 +0530
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: Upgrade, HTTP_UPGRADE: websocket)
+ChatRoomChannel is transmitting the subscription confirmation
+ChatRoomChannel is streaming from chat_room_channel
+Started GET "/service-worker.js" for ::1 at 2023-05-24 17:09:49 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+ChatRoomChannel#announce({"name"=>"Nitesh Kumar", "type"=>"join"})
+[ActionCable] Broadcasting to chat_room_channel: {:chat_room_name=>"Nitesh Kumar", :type=>"join"}
+ChatRoomChannel transmitting {"chat_room_name"=>"Nitesh Kumar", "type"=>"join"} (via streamed from chat_room_channel)
+Started GET "/service-worker.js" for ::1 at 2023-05-24 17:10:18 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/service-worker.js"):
+  
+actionpack (6.0.6.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.6.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.6.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.6.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.7) lib/rack/method_override.rb:24:in `call'
+rack (2.2.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.6.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.7) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.6.1) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.6) lib/rack/proxy.rb:87:in `call'
+railties (6.0.6.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+ChatRoomChannel#speak({"message"=>"Hello Bhai", "name"=>"Nitesh Kumar"})
+[ActionCable] Broadcasting to chat_room_channel: {:message=>"Hello Bhai", :sent_by=>"Nitesh Kumar"}
+ChatRoomChannel transmitting {"message"=>"Hello Bhai", "sent_by"=>"Nitesh Kumar"} (via streamed from chat_room_channel)
